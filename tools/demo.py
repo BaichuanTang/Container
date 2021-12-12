@@ -176,10 +176,8 @@ class Predictor(object):
 
         # preprocessing: resize
         bboxes /= ratio
-
         cls = output[:, 6]
         scores = output[:, 4] * output[:, 5]
-
         vis_res = vis(img, bboxes, scores, cls, cls_conf, self.cls_names)
         return vis_res
 
@@ -228,6 +226,7 @@ def imageflow_demo(predictor, vis_folder, current_time, args):
         if ret_val:
             outputs, img_info = predictor.inference(frame)
             result_frame = predictor.visual(outputs[0], img_info, predictor.confthre)
+            cv2.imshow("tbc",result_frame)
             if args.save_result:
                 vid_writer.write(result_frame)
             ch = cv2.waitKey(1)
