@@ -24,7 +24,26 @@ pip3 install -v -e .  # or  python3 setup.py develop
 Step2. Install [pycocotools](https://github.com/cocodataset/cocoapi).
 
 ```shell
-pip3 install cython; pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+pip install cython; pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+```
+
+Step3. MySQL数据库
+
+- 安装版本5.7.28的MySQL
+- 执行一遍`createTables.ipynb`，建库建表
+
+Step4. 配置QtDesigner和PyQt5
+
+```shell
+pip install pyqt5
+pip install pyqt5-tools
+```
+
+Step5. 安装TensorFlow和PyTorch
+
+```shell
+pip install tensorflow_gpu==2.3.0
+pip install -r requirements.txt
 ```
 
 </details>
