@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\BaiduNetdiskDownload\系分\facial_emotion_recognition__EMOJIFIER-master\src\ui_and_pys\select_item.ui'
+# Form implementation generated from reading ui file 'e:\Object Detection\YOLOX\ui_and_pys\select_item.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,18 +14,18 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1200, 800)
+        MainWindow.resize(1600, 900)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(210, 70, 271, 101))
+        self.label.setGeometry(QtCore.QRect(540, 120, 421, 171))
         font = QtGui.QFont()
         font.setFamily("楷体")
         font.setPointSize(30)
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(260, 220, 131, 61))
+        self.pushButton.setGeometry(QtCore.QRect(680, 410, 131, 61))
         font = QtGui.QFont()
         font.setFamily("楷体")
         font.setPointSize(20)
@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName("pushButton")
         # MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 670, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1600, 38))
         self.menubar.setObjectName("menubar")
         # MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -48,7 +48,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "请选购商品"))
         self.pushButton.setText(_translate("MainWindow", "关门"))
-        
+
 class select_item_window(QtWidgets.QWidget, Ui_MainWindow):  # 创建子UI类
 
     def __init__(self):

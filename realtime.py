@@ -260,7 +260,7 @@ def realtime_det_recog(predictor, vis_folder, current_time, save_result): #改�
     width=1200
     height=800
     cv2.namedWindow("tbc", 0)
-    cv2.resizeWindow("tbc", 300, 300)  # 设置窗口大小
+    cv2.resizeWindow("tbc", width, height)  # 设置窗口大小
     last_highest_ratio=[0,0,0,0,0,0,0]
     collected_item_cnt=[0,0,0,0,0,0,0]
     last_frame_info=None

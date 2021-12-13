@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\BaiduNetdiskDownload\系分\facial_emotion_recognition__EMOJIFIER-master\src\ui_and_pys\open_succ.ui'
+# Form implementation generated from reading ui file 'e:\Object Detection\YOLOX\ui_and_pys\open_succ.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,18 +14,18 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1200, 800)
+        MainWindow.resize(1600, 900)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(130, 80, 531, 151))
+        self.label.setGeometry(QtCore.QRect(330, 100, 861, 211))
         font = QtGui.QFont()
         font.setFamily("黑体")
         font.setPointSize(48)
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.logined_3 = QtWidgets.QLabel(self.centralwidget)
-        self.logined_3.setGeometry(QtCore.QRect(150, 260, 491, 101))
+        self.logined_3.setGeometry(QtCore.QRect(350, 390, 891, 161))
         font = QtGui.QFont()
         font.setFamily("楷体")
         font.setPointSize(22)
@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.logined_3.setObjectName("logined_3")
         # MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1600, 38))
         self.menubar.setObjectName("menubar")
         # MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
