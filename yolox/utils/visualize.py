@@ -53,7 +53,7 @@ def vis(img, boxes, scores, cls_ids, conf=0.5, class_names=None,recog_model=None
         #     cv2.imwrite(os.getcwd()+r'/reallife_images/0/'+str(random.random())+'.jpg', cropped)
         # 对于cropped实时预测
         
-        #frame_info先设为None，修改该函数传回realtime调用的地方，
+        
         #它的作用是存储当前帧所识别到的饮料瓶信息和位置，并回传给主函数来判断饮料是否拿出
         #目前我的朴素算法支支持单次拿出一个多多个不同种类的饮料，还不支持拿出不同种类的饮料
         frame_info={i:{'loc':0,'cnt':0} for i in range(7)} 

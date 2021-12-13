@@ -19,7 +19,7 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 IMAGE_EXT = [".jpg", ".jpeg", ".webp", ".bmp", ".png"]
 
-#限制内存增长，让两个GPU同时使用
+#限制内存增长，让tf和pytorch同时使用
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
   # Restrict TensorFlow to only allocate 1GB of memory on the first GPU
@@ -257,6 +257,10 @@ def realtime_det_recog(predictor, vis_folder, current_time, save_result): #改�
     vid_writer = cv2.VideoWriter(
         save_path, cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(width), int(height))
     )
+    width=1200
+    height=800
+    cv2.namedWindow("tbc", 0)
+    cv2.resizeWindow("tbc", 300, 300)  # 设置窗口大小
     last_highest_ratio=[0,0,0,0,0,0,0]
     collected_item_cnt=[0,0,0,0,0,0,0]
     last_frame_info=None
